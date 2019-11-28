@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a14fa9d1-fb31-4c94-b73b-346c99598a4a" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1SQ2N0J8ct9pgbRqxK5BSjYNl6D" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="findjar.last.used.dir" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\课程\解释器构造\实验\interpreter\src" />
+      <recent name="E:\课程\解释器构造\实验\interpreter\src\com\wkq\interpreter\lexer" />
+      <recent name="E:\课程\解释器构造\实验\interpreter\src\com\wkq\interpreter" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\课程\解释器构造\实验\interpreter" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="AnalyseTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wkq.interpreter.parser.AnalyseTable" />
+      <module name="interpreter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wkq.interpreter.parser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wkq.interpreter.ui.Main" />
+      <module name="interpreter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wkq.interpreter.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wkq.interpreter.ui.MainUI" />
+      <module name="interpreter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wkq.interpreter.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Semantic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wkq.interpreter.semantic.Semantic" />
+      <module name="interpreter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wkq.interpreter.semantic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Utils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wkq.interpreter.semantic.Utils" />
+      <module name="interpreter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wkq.interpreter.semantic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Semantic" />
+        <item itemvalue="Application.MainUI" />
+        <item itemvalue="Application.Utils" />
+        <item itemvalue="Application.AnalyseTable" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a14fa9d1-fb31-4c94-b73b-346c99598a4a" name="Default Changelist" comment="" />
+      <created>1571481454629</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571481454629</updated>
+      <workItem from="1571481460191" duration="11650000" />
+      <workItem from="1571621665244" duration="9037000" />
+      <workItem from="1571634374178" duration="1761000" />
+      <workItem from="1571637193451" duration="1935000" />
+      <workItem from="1571639178980" duration="363000" />
+      <workItem from="1571657566788" duration="22000" />
+      <workItem from="1572144316941" duration="1409000" />
+      <workItem from="1572487452760" duration="2992000" />
+      <workItem from="1572599775324" duration="18000" />
+      <workItem from="1572658574278" duration="496000" />
+      <workItem from="1572659270072" duration="8600000" />
+      <workItem from="1572790671199" duration="4254000" />
+      <workItem from="1572833156638" duration="30331000" />
+      <workItem from="1572942260318" duration="1626000" />
+      <workItem from="1573006836856" duration="3038000" />
+      <workItem from="1573012720313" duration="9565000" />
+      <workItem from="1573035312266" duration="9301000" />
+      <workItem from="1573093401986" duration="6467000" />
+      <workItem from="1573164442276" duration="8427000" />
+      <workItem from="1573204960488" duration="4059000" />
+      <workItem from="1573223806974" duration="4441000" />
+      <workItem from="1573276084443" duration="4338000" />
+      <workItem from="1573365513066" duration="1738000" />
+      <workItem from="1573442000681" duration="760000" />
+      <workItem from="1573451496466" duration="12645000" />
+      <workItem from="1573529933366" duration="2370000" />
+      <workItem from="1573535318270" duration="1292000" />
+      <workItem from="1573542555365" duration="4434000" />
+      <workItem from="1573550892339" duration="16018000" />
+      <workItem from="1573623495531" duration="1946000" />
+      <workItem from="1573625628159" duration="5177000" />
+      <workItem from="1573640996573" duration="8997000" />
+      <workItem from="1573696337191" duration="8386000" />
+      <workItem from="1573714222672" duration="6124000" />
+      <workItem from="1573801585854" duration="860000" />
+      <workItem from="1573807614665" duration="4063000" />
+      <workItem from="1573820376768" duration="4334000" />
+      <workItem from="1573876666378" duration="19442000" />
+      <workItem from="1574042583981" duration="4130000" />
+      <workItem from="1574056941730" duration="8260000" />
+      <workItem from="1574653344402" duration="1173000" />
+      <workItem from="1574654572452" duration="106000" />
+      <workItem from="1574824803723" duration="5475000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/wkq/interpreter/parser/AnalyseProduction.java</url>
+          <line>483</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/wkq/interpreter/semantic/Semantic.java</url>
+          <line>115</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/wkq/interpreter/semantic/Semantic.java</url>
+          <line>136</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/wkq/interpreter/semantic/Semantic.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/wkq/interpreter/semantic/Semantic.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/wkq/interpreter/semantic/Semantic.java</url>
+          <line>196</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/wkq/interpreter/semantic/Semantic.java</url>
+          <line>340</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/wkq/interpreter/semantic/Semantic_v1.java</url>
+          <line>954</line>
+          <option name="timeStamp" value="187" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="this" />
+        <watch expression="tokens.get(8)" language="JAVA" />
+        <watch expression="tokens.get(8)" language="JAVA" />
+        <watch expression="this" />
+        <watch expression="tokens.get(8)" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/interpreter$Main.ic" NAME="Main Coverage Results" MODIFIED="1574828540070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.wkq.interpreter.ui.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/interpreter$Lexer.ic" NAME="Lexer Coverage Results" MODIFIED="1571636026314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.wkq.interpreter.lexer.*</FILTER>
+    </SUITE>
+  </component>
+</project>

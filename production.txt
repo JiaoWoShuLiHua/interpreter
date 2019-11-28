@@ -1,0 +1,87 @@
+program -> func funcs
+funcs -> $
+funcs -> func funcs
+func -> TYPE IDENTIFIER ( args ) func_body
+args -> TYPE IDENTIFIER arg
+args -> $
+arg -> , TYPE IDENTIFIER arg
+arg -> $
+func_body -> ;
+func_body -> { statements }
+
+statements -> statement statements
+statements -> $
+statement -> break ;
+statement -> return ;
+statement -> read_stm ;
+statement -> write_stm ;
+statement -> declare_stm ;
+statement -> assign_stm ;
+statement -> while_stm
+statement -> do_stm
+statement -> for_stm
+statement -> if_stm
+statement -> switch_stm
+
+read_stm -> read ( )
+
+write_stm -> write ( write_val )
+write_val -> value
+write_val -> IDENTIFIER arr
+arr -> [ arithmetic_exp ]
+arr -> $
+
+value -> INT
+value -> REAL
+value -> CHAR
+value -> STRING
+
+//算术
+arithmetic_exp -> arithmetic_item arithmetic_term
+arithmetic_term -> BIN_AR_OP_2 arithmetic_item arithmetic_term
+arithmetic_term -> $
+arithmetic_item -> arithmetic_fac arithmetic_t
+arithmetic_t -> BIN_AR_OP_1 arithmetic_fac arithmetic_t
+arithmetic_t -> $
+arithmetic_fac -> IDENTIFIER
+arithmetic_fac -> value
+arithmetic_fac -> ( arithmetic_exp )
+
+//逻辑
+logic_exp -> logic_item logic_term
+logic_term -> LOGIC_OP logic_item logic_term
+logic_term -> $
+// logic_item -> ( logic_item ) 加上不是 LL(1) 文法，因此不支持括号运算
+logic_item -> UN_LOGIC_OP logic_item
+logic_item -> BOOL
+logic_item -> arithmetic_exp logic_ari
+logic_ari -> RELATION_OP arithmetic_exp
+logic_ari -> $
+
+声明
+declare_stm -> TYPE IDENTIFIER declare_val declare_item
+declare_item -> $
+declare_item -> , IDENTIFIER declare_val declare_item
+declare_val -> $
+declare_val -> ASSIGNMENT_OP arithmetic_exp
+declare_val -> [ arithmetic_exp ] ASSIGNMENT_OP declare_arr
+declare_arr -> { value arr_item }
+arr_item -> $
+arr_item -> , value arr_item
+
+//赋值
+assign_stm -> SELF_OP IDENTIFIER
+assign_stm -> IDENTIFIER assign_item
+assign_item -> ASSIGNMENT_OP assign_fac
+assign_item -> SELF_OP
+assign_item -> [ arithmetic_exp ] ASSIGNMENT_OP assign_fac
+assign_fac -> arithmetic_exp
+assign_fac -> read_stm
+
+//条件
+while_stm -> while ( logic_exp ) { statements }
+do_stm -> do { statements } while ( logic_exp ) ;
+for_stm -> for ( declare_stm ; logic_exp ; assign_stm ) { statements }
+if_stm -> if ( logic_exp ) statement else_stm
+else_stm -> $
+else_stm -> else statement
