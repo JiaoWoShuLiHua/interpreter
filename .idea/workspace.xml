@@ -1,8 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a14fa9d1-fb31-4c94-b73b-346c99598a4a" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="a14fa9d1-fb31-4c94-b73b-346c99598a4a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/interpreter/META-INF/interpreter.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/interpreter/com/wkq/interpreter/lexer/Lexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/interpreter/com/wkq/interpreter/lexer/Lexer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/interpreter/com/wkq/interpreter/semantic/Expression.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/interpreter/com/wkq/interpreter/semantic/Expression.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/interpreter/com/wkq/interpreter/semantic/Semantic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/interpreter/com/wkq/interpreter/semantic/Semantic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/interpreter/com/wkq/interpreter/semantic/Semantic_v1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/interpreter/com/wkq/interpreter/semantic/Semantic_v1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/interpreter/com/wkq/interpreter/semantic/Symbol.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/interpreter/com/wkq/interpreter/semantic/Symbol.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/interpreter/com/wkq/interpreter/ui/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/interpreter/com/wkq/interpreter/ui/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/production_v1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/production_v1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result.json" beforeDir="false" afterPath="$PROJECT_DIR$/result.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wkq/interpreter/lexer/Lexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wkq/interpreter/lexer/Lexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wkq/interpreter/semantic/Expression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wkq/interpreter/semantic/Expression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wkq/interpreter/semantic/Semantic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wkq/interpreter/semantic/Semantic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wkq/interpreter/semantic/Semantic_v1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wkq/interpreter/semantic/Semantic_v1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wkq/interpreter/semantic/Symbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wkq/interpreter/semantic/Symbol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wkq/interpreter/ui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wkq/interpreter/ui/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testAnalyse.c" beforeDir="false" afterPath="$PROJECT_DIR$/testAnalyse.c" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,17 +33,27 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1SQ2N0J8ct9pgbRqxK5BSjYNl6D" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="findjar.last.used.dir" value="$PROJECT_DIR$" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../人工智能/Maze_Solver" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -36,18 +64,6 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\课程\解释器构造\实验\interpreter" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="AnalyseTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -125,6 +141,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -178,11 +206,88 @@
       <workItem from="1574653344402" duration="1173000" />
       <workItem from="1574654572452" duration="106000" />
       <workItem from="1574824803723" duration="5475000" />
+      <workItem from="1575007504255" duration="1853000" />
+      <workItem from="1575091327584" duration="12834000" />
+      <workItem from="1575855650726" duration="4247000" />
+      <workItem from="1575871022902" duration="13430000" />
+      <workItem from="1575887450199" duration="2698000" />
+      <workItem from="1575891909402" duration="18000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="429" height="466" key="DebuggerActiveHint" timestamp="1575859605363">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="429" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1575859605363" />
+    <state x="760" y="288" key="FileChooserDialogImpl" timestamp="1575891927696">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="760" y="288" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1575891927696" />
+    <state width="1561" height="773" key="GridCell.Tab.0.bottom" timestamp="1575890432069">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1493" height="618" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575885686880" />
+    <state width="1561" height="773" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575890432069" />
+    <state width="1561" height="773" key="GridCell.Tab.0.center" timestamp="1575890432069">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1493" height="618" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1575885686880" />
+    <state width="1561" height="773" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575890432069" />
+    <state width="1561" height="773" key="GridCell.Tab.0.left" timestamp="1575890432069">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1493" height="618" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1575885686880" />
+    <state width="1561" height="773" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575890432069" />
+    <state width="1561" height="773" key="GridCell.Tab.0.right" timestamp="1575890432069">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1493" height="618" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1575885686880" />
+    <state width="1561" height="773" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575890432069" />
+    <state width="1493" height="618" key="GridCell.Tab.1.bottom" timestamp="1575885686880">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="618" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575885686880" />
+    <state width="1877" height="306" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575860147595" />
+    <state width="1493" height="618" key="GridCell.Tab.1.center" timestamp="1575885686880">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="618" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1575885686880" />
+    <state width="1877" height="306" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575860147595" />
+    <state width="1493" height="618" key="GridCell.Tab.1.left" timestamp="1575885686880">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="618" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1575885686880" />
+    <state width="1877" height="306" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575860147595" />
+    <state width="1493" height="618" key="GridCell.Tab.1.right" timestamp="1575885686880">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="618" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1575885686880" />
+    <state width="1877" height="306" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575860147595" />
+    <state x="158" y="168" key="SettingsEditor" timestamp="1575891918457">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="158" y="168" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1575891918457" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1575856259815">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1575856259815" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -224,8 +329,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/wkq/interpreter/semantic/Semantic_v1.java</url>
-          <line>954</line>
-          <option name="timeStamp" value="187" />
+          <line>338</line>
+          <option name="timeStamp" value="206" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/wkq/interpreter/semantic/Semantic_v1.java</url>
+          <line>836</line>
+          <option name="timeStamp" value="227" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/wkq/interpreter/semantic/Semantic_v1.java</url>
+          <line>796</line>
+          <option name="timeStamp" value="236" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/wkq/interpreter/semantic/Symbol.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="239" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

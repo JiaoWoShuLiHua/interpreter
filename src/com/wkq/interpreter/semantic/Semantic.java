@@ -412,7 +412,7 @@ public class Semantic
         //中缀转后缀
         List<Token> postfix = Expression.infix2Postfix(tokens);
         //计算后缀表达式
-        double value = Expression.calc(postfix, symbolTable);
+        double value = Double.valueOf(Expression.calc(postfix, symbolTable).toString());
 
         if (Double.isInfinite(value))
         {
@@ -489,20 +489,22 @@ public class Semantic
                 }
                 else
                 {
-                    Scanner in = new Scanner(System.in);
-                    String line = in.nextLine();
                     try
                     {
+                        Scanner in = new Scanner(System.in);
                         switch (symbol.getType())
                         {
                             case Type.INT:
-                                symbol.setValue(Integer.parseInt(line) + "");
+                                int lineInt = in.nextInt();
+                                symbol.setValue(lineInt+ "");
                                 break;
                             case Type.REAL:
-                                symbol.setValue(Double.parseDouble(line) + "");
+                                float lineFloat = in.nextFloat();
+                                symbol.setValue(lineFloat + "");
                                 break;
                             case Type.CHAR:
-                                symbol.setValue(line.charAt(0) + "");
+                                String lineChar = in.nextLine();
+                                symbol.setValue(lineChar.charAt(0) + "");
                                 break;
                             default:
                                 break;
@@ -619,7 +621,7 @@ public class Semantic
         //中缀转后缀
         List<Token> postfix = Expression.infix2Postfix(tokens);
         //计算后缀表达式
-        double value = Expression.calc(postfix, symbolTable);
+        double value = Double.valueOf(Expression.calc(postfix, symbolTable).toString());
 //        System.out.println(value);
 
         return value;

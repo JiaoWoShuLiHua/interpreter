@@ -1,30 +1,44 @@
 int main() {
-int len = 11;
-real a[len] = { -100.1,1,2,3,4,5.5,6,7,8,9,100.9};
-real b  = 0;
-real err = 010101010110101.1010101011010101;
-b = scan();
+int n;
+n = scan();
+real err = 1010101010101010.101010101010;
+real clc = 1000000000000000.000000000001;
+int a[n];
+int head = 0,tail = 0;
 
-int l = 0, h = len;
-while(l < h ){
-  int mid = l + ( h - l)/ 2;
-  if(a[mid] > b){
-    h = mid;
-  }else if(a[mid] < b)
-    l = mid + 1;
-  else {
-    break;
-  }
- }
+int op;
+real operand;
+operand= scan(); // abs(0): exit >1:push <-1:pop -1~1:print len;
+op = scan();
 
-if(l < h - 1)
-  {
-  print(l);
-  print(h);
-  print(l + ( h - l) / 2);
+while(operand <> 0){
+  if(operand > 1){
+    // push
+    int isFull = (tail + 1) - (tail + 1) / n * n  == head;
+    if(isFull){
+      print(err);
+      break;
+    }
+    a[tail] = op;
+    tail = (tail + 1) - ((tail + 1) / n) * n;
+  }else if(operand < -1){
+    // pop
+    int isEmpty = tail == head;
+    if(isEmpty){
+      print(-err);
+      break;
+    }
+    print(a[head]);
+    head = (head + 1) - ((head + 1) / n ) * n;
+  }else {
+    // print length
+    int len = tail - head - (tail - head) / n * n;
+    print(len);
   }
- else{
-  print("err");
-  print(err);
+  print(clc);
+  operand = scan();
+  op = scan();
+
  }
 }
+

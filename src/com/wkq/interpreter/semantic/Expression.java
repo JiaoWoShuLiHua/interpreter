@@ -121,8 +121,9 @@ public class Expression {
     }
 
     //计算后缀表达式，将结果放入到声明的stack中
-    public static double calc(List<Token> tokens, SymbolTable table) {
-        Stack<Double> stack = new Stack<>();
+    public static Object calc(List<Token> tokens, SymbolTable table) {
+        String type = "";
+        Stack<Object> stack = new Stack<>();
         for (Token token : tokens) {
             switch (token.getCategory()) {
                 case Category.CHAR:
@@ -130,62 +131,94 @@ public class Expression {
                     stack.push(charAscii);
                     break;
                 case Category.INT:
+                    stack.push(Integer.parseInt(token.getValue()));
+                    break;
                 case Category.REAL:
                     stack.push(Double.parseDouble(token.getValue()));
                     break;
                 case Category.BOOL:
-                    stack.push(token.getValue().equals("true") ? 1.0 : 0.0);
+                    stack.push(token.getValue().equals("true") ? 1 : 0);
                     break;
                 case Category.IDENTIFIER:
                     //从符号表中获取标识符的值，放入当前栈中
-                    stack.push(table.query(token.getValue()).getValue());
+                    if(table.query(token.getValue()).getType().equals(Type.INT)){
+                        stack.push(Double.valueOf(table.query(token.getValue()).getValue()).intValue());
+                    }
+                    else{
+                        stack.push(table.query(token.getValue()).getValue());
+                    }
                     break;
                 case Category.UN_LOGIC_OP:
-                    stack.push(stack.pop() > 0 ? 0.0 : 1.0);
+                    stack.push(Double.valueOf(stack.pop().toString()) > 0 ? 0 : 1);
                     break;
                 default:
                     //每遇到运算符，就将前两个操作数进行计算
-                    double b = stack.pop();
-                    double a = stack.pop();
+                    Object b = stack.pop();
+                    Object a = stack.pop();
                     switch (token.getValue()) {
                         case "+":
-                            stack.push(a + b);
+                            if(!a.toString().contains(".") && !b.toString().contains(".")){
+                                stack.push(Integer.valueOf(a.toString()) + Integer.valueOf(b.toString()));
+                            }
+                            else{
+                                stack.push(Double.valueOf(a.toString()) + Double.valueOf(b.toString()));
+                            }
                             break;
                         case "-":
-                            stack.push(a - b);
+                            if(!a.toString().contains(".") && !b.toString().contains(".")){
+                                stack.push(Integer.valueOf(a.toString()) - Integer.valueOf(b.toString()));
+                            }
+                            else{
+                                stack.push(Double.valueOf(a.toString()) - Double.valueOf(b.toString()));
+                            }
                             break;
                         case "*":
-                            stack.push(a * b);
+                            if(!a.toString().contains(".") && !b.toString().contains(".")){
+                                stack.push(Integer.valueOf(a.toString()) * Integer.valueOf(b.toString()));
+                            }
+                            else{
+                                stack.push(Double.valueOf(a.toString()) * Double.valueOf(b.toString()));
+                            }
                             break;
                         case "/":
-                            stack.push(a / b);
+                            if(!a.toString().contains(".") && !b.toString().contains(".")){
+                                stack.push(Integer.valueOf(a.toString()) / Integer.valueOf(b.toString()));
+                            }
+                            else{
+                                stack.push(Double.valueOf(a.toString()) / Double.valueOf(b.toString()));
+                            }
                             break;
                         case "%":
-                            stack.push(a % b);
+                            if(!a.toString().contains(".") && !b.toString().contains(".")){
+                                stack.push(Integer.valueOf(a.toString()) % Integer.valueOf(b.toString()));
+                            }
+                            else{
+                                stack.push(Double.valueOf(a.toString()) % Double.valueOf(b.toString()));
+                            }
                             break;
                         case ">":
-                            stack.push(a > b ? 1.0 : 0.0);
+                            stack.push(Double.valueOf(a.toString()) > Double.valueOf(b.toString()) ? 1 : 0);
                             break;
                         case ">=":
-                            stack.push(a >= b ? 1.0 : 0.0);
+                            stack.push(Double.valueOf(a.toString()) >= Double.valueOf(b.toString()) ? 1 : 0);
                             break;
                         case "<":
-                            stack.push(a < b ? 1.0 : 0.0);
+                            stack.push(Double.valueOf(a.toString()) < Double.valueOf(b.toString()) ? 1 : 0);
                             break;
                         case "<=":
-                            stack.push(a <= b ? 1.0 : 0.0);
+                            stack.push(Double.valueOf(a.toString()) <= Double.valueOf(b.toString()) ? 1 : 0);
                             break;
                         case "==":
-                            stack.push(a == b ? 1.0 : 0.0);
+                            stack.push(Double.valueOf(a.toString()).equals(Double.valueOf(b.toString())) ? 1 : 0);
                             break;
                         case "<>":
-                            stack.push(a != b ? 1.0 : 0.0);
+                            stack.push(!Double.valueOf(a.toString()).equals(Double.valueOf(b.toString())) ? 1 : 0);
                             break;
                         case "&&":
-                            stack.push(a > 0 && b > 0 ? 1.0 : 0.0);
+                            stack.push(Double.valueOf(a.toString()) > 0 && Double.valueOf(b.toString()) > 0 ? 1.0 : 0.0);
                             break;
                         case "||":
-                            stack.push(a > 0 || b > 0 ? 1.0 : 0.0);
+                            stack.push(Double.valueOf(a.toString()) > 0 || Double.valueOf(b.toString()) > 0 ? 1.0 : 0.0);
                             break;
                         default:
                             break;

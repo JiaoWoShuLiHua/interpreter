@@ -307,6 +307,7 @@ public class Lexer
                 break;
             case '!':
                 errorTokens.add(new ErrorToken("无法识别的符号", "" + ch, rowNum, colNum));
+                ch = (char)br.read();
                 break;
             case '/':
                 handleDiv();

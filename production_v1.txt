@@ -12,11 +12,13 @@ func_def_dec_closure -> ;
 //复合函数模块
 com_func_block -> { func_block }
 
+//值
 value -> INT
 value -> REAL
 value -> CHAR
 value -> STRING
 
+//变量
 var -> IDENTIFIER arr_sub
 
 //数组下标
@@ -78,6 +80,7 @@ func_block_closure -> assign_func func_block
 func_block_closure -> for_loop func_block
 func_block_closure -> while_loop func_block
 func_block_closure -> break ;
+func_block_closure -> continue ;
 func_block_closure -> print_stm ; func_block
 func_block_closure -> scan_stm ; func_block
 //函数块闭包 -> 条件语句 函数块
@@ -111,7 +114,7 @@ param_closure -> $
 param -> identifier
 param -> value
 
-//for循环
+//循环循环
 for_loop -> for for_loop_block
 for_loop_block -> ( assign_func exp ; for_after ) loop_block
 
@@ -127,9 +130,11 @@ loop_block -> ;
 loop_block -> assign_func
 loop_block -> print_stm ;
 loop_block -> conditional_stat
+//条件语句
 conditional_stat -> if conditional_stat_block
 conditional_stat_block -> ( exp ) if_then_block
 if_then_block -> ;
+if_then_block -> conditional_stat
 if_then_block -> assign_func else_stat
 if_then_block -> print_stm ; else_stat
 if_then_block -> scan_stm ; else_stat
@@ -139,6 +144,7 @@ else_stat -> $
 else_if_stat -> com_func_block
 else_if_stat -> assign_func
 else_if_stat -> break ;
+else_if_stat -> continue ;
 else_if_stat -> print_stm ;
 else_if_stat -> conditional_stat
 func_return -> return factors ;

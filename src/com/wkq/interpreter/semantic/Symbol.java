@@ -1,10 +1,9 @@
 package com.wkq.interpreter.semantic;
 
 import java.util.Arrays;
+import java.util.List;
 
-/**
- * 符号表的表项
- */
+//符号表的表项
 public class Symbol {
     private String symbol;
     // 数据类型: int double ...
@@ -23,19 +22,16 @@ public class Symbol {
     private double[] realArray;
     // 字符串数组
     private char[] charArray;
-
     //作用域
     private int level;
-
+    //是否为数组
     private boolean isArray = false;
 
-    public int getLevel()
-    {
+    public int getLevel() {
         return level;
     }
 
-    public void setLevel(int level)
-    {
+    public void setLevel(int level) {
         this.level = level;
     }
 
@@ -61,12 +57,16 @@ public class Symbol {
         this.type = type;
     }
 
-    public void setValue(String value) throws NumberFormatException {
-        try
-        {
+    public void setValue(String value) {
+        try {
             switch (type) {
+
                 case Type.INT:
-                    intValue = Double.valueOf(value).intValue();
+                    if (value.contains(".")) {
+                        value = value.split("\\.")[0];
+                    }
+                    intValue = Integer.parseInt(value);
+                    //intValue = Double.valueOf(value).intValue();
                     break;
                 case Type.REAL:
                     realValue = Double.parseDouble(value);
@@ -77,8 +77,7 @@ public class Symbol {
                 default:
                     break;
             }
-        }
-        catch (Exception e){
+        } catch (Exception e) {
             throw new RuntimeException("赋值时类型发生错误");
         }
     }
@@ -115,19 +114,31 @@ public class Symbol {
         }
     }
 
-    public void setArrayValue(int index, String value) throws NumberFormatException {
-        switch (type) {
-            case Type.INT:
-                intArray[index] = Double.valueOf(value).intValue();
-                break;
-            case Type.REAL:
-                realArray[index] = Float.parseFloat(value);
-                break;
-            case Type.CHAR:
-                realArray[index] = value.charAt(0);
-                break;
-            default:
-                break;
+    public void setArrayValue(int index, String value) {
+        try {
+            switch (type) {
+                case Type.INT:
+                    if (value.contains(".")) {
+                        value = value.split("\\.")[0];
+                    }
+                    Double v = Double.valueOf(value);
+                    if (v > Integer.MAX_VALUE || v < Integer.MIN_VALUE) {
+                        Double r = Double.valueOf(Integer.MIN_VALUE + (v - Integer.MAX_VALUE) - 1);
+                        intArray[index] = r.intValue();
+                    }
+                    intArray[index] = Integer.parseInt(value);
+                    break;
+                case Type.REAL:
+                    realArray[index] = Float.parseFloat(value);
+                    break;
+                case Type.CHAR:
+                    realArray[index] = value.charAt(0);
+                    break;
+                default:
+                    break;
+            }
+        } catch (NumberFormatException ex) {
+            throw new RuntimeException("数字太大，数组越界");
         }
     }
 
@@ -228,8 +239,7 @@ public class Symbol {
         }
     }
 
-    public boolean isArray()
-    {
+    public boolean isArray() {
         return isArray;
     }
 }

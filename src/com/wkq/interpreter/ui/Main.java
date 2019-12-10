@@ -2,6 +2,7 @@ package com.wkq.interpreter.ui;
 
 import com.wkq.interpreter.lexer.Lexer;
 import com.wkq.interpreter.lexer.entity.Token;
+import com.wkq.interpreter.lexer.utils.Category;
 import com.wkq.interpreter.parser.AnalyseTable;
 import com.wkq.interpreter.semantic.Semantic_v1;
 
@@ -17,14 +18,16 @@ public class Main
     public static void main(String[] args)
     {
 
-        int a = 1;
-        int b = 22;
         try
         {
             AnalyseTable at = null;
             Lexer lexer = new Lexer();
             ArrayList<Token> tokens = lexer.lexing("testAnalyse.c");
-
+            for(int i = 0; i < tokens.size(); i++){
+                if(tokens.get(i).getCategory().equals(Category.NOTES)){
+                    tokens.remove(i);
+                }
+            }
             if (lexer.getErrorTokens().size() > 0)
             {
                 StringBuilder errorMsg = new StringBuilder();
