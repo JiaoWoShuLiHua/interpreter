@@ -19,7 +19,7 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Scanner;
-import com.wkq.interpreter.javacc.file.SymbolTable;
+import com.wkq.interpreter.javacc.SymbolTable;
 public class CMMParser
 {
     static SymbolTable table = new SymbolTable();

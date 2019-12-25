@@ -1,4 +1,4 @@
-package com.wkq.interpreter.ui;
+package com.wkq.interpreter.main;
 
 import com.wkq.interpreter.lexer.Lexer;
 import com.wkq.interpreter.lexer.entity.Token;
@@ -42,15 +42,15 @@ public class Main
             at.analyze(tokens);
             if (at.isCorrect())
             {
-//                ShowTree showTree = new ShowTree();
-//                if (showTree.create(at.getHeader()))
-//                {
-//                    System.out.println("成功");
-//                }
-//                else
-//                {
-//                    System.out.println("失败");
-//                }
+                ShowTree showTree = new ShowTree();
+                if (showTree.create(at.getHeader()))
+                {
+                    System.out.println("成功");
+                }
+                else
+                {
+                    System.out.println("失败");
+                }
                 Semantic_v1 semantic = new Semantic_v1();
                 semantic.run(at.getHeader());
             }

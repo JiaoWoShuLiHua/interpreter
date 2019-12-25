@@ -1,4 +1,4 @@
-package com.wkq.interpreter.javacc.file;
+package com.wkq.interpreter.javacc;
 
 import jdk.nashorn.internal.runtime.ParserException;
 

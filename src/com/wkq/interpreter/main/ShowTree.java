@@ -1,4 +1,4 @@
-package com.wkq.interpreter.ui;
+package com.wkq.interpreter.main;
 
 import com.wkq.interpreter.parser.TreeNode;
 
@@ -6,11 +6,7 @@ import javax.swing.*;
 import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.DefaultMutableTreeNode;
-import javax.swing.tree.TreePath;
 import java.awt.*;
-import java.util.Enumeration;
-import java.util.LinkedList;
-import java.util.List;
 
 /**
  * @author: wkq

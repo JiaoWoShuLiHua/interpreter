@@ -5,7 +5,6 @@ import com.wkq.interpreter.lexer.entity.Token;
 import com.wkq.interpreter.lexer.utils.Category;
 import com.wkq.interpreter.parser.AnalyseTable;
 import com.wkq.interpreter.parser.TreeNode;
-import com.wkq.interpreter.ui.ShowTree;
 
 import java.io.IOException;
 import java.util.ArrayList;

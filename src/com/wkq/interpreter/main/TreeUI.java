@@ -1,28 +1,12 @@
-package com.wkq.interpreter.ui;
-
-import com.wkq.interpreter.lexer.Lexer;
-import com.wkq.interpreter.lexer.entity.Token;
-import com.wkq.interpreter.parser.AnalyseTable;
-
-import java.awt.*;
-import java.awt.event.*;
-import java.io.*;
-import java.util.ArrayList;
-import java.util.HashMap;
+package com.wkq.interpreter.main;
 
 import javax.swing.*;
-import javax.swing.event.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import javax.swing.filechooser.FileFilter;
 
 /**
  * @author: wkq
  * @date: 2019/11/9 21:24
  */
-public class MainUI
+public class TreeUI
 {
     private JTabbedPane jTabbedPane = new JTabbedPane();
 
@@ -30,7 +14,7 @@ public class MainUI
 
     private JMenuBar menuBar = null;
     
-    public MainUI()
+    public TreeUI()
     {
         mainUI = new JFrame();
         mainUI.setTitle("解释器");

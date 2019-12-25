@@ -1,15 +1,11 @@
-package com.wkq.interpreter.javacc.file;
+package com.wkq.interpreter.javacc;
 
-public class Symbol {
-
+public class FunSymbol {
     private String m_name;
-    private int m_level;
     private String m_value;
     private int m_type;
-    //type=0 integer  1 real  3 string
-    public Symbol(int level,String name){
+    public FunSymbol(String name){
         m_name=name;
-        m_level=level;
     }
 
     public String GetName(){
@@ -18,10 +14,6 @@ public class Symbol {
 
     public void SetName(String name){
         m_name = name;
-    }
-
-    public int GetLevel(){
-        return m_level;
     }
 
     public String getValue(){
